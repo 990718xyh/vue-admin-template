@@ -1,0 +1,30 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": [
+		"plugin:plugin:vue/vue3-recommended",
+		"eslint:recommended",
+		"plugin:vue/vue3-essential",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended"
+	],
+	"overrides": [],
+	"parser": "vue-eslint-parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"parser": "@typescript-eslint/parser",
+		"sourceType": "module"
+	},
+	"plugins": ["vue", "@typescript-eslint", "@vue/prettier"],
+	"rules": {
+		"vue/multi-word-component-names": 0,
+		"indent": ["error", "tab"],
+		"linebreak-style": ["error", "windows"],
+		"quotes": ["error", "double"],
+		"semi": ["error", "always"],
+		"prettier/prettier": "error"
+	}
+}
