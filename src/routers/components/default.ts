@@ -6,7 +6,7 @@ const Defaule: RouteRecordRaw[] = [
 	{
 		path: "/",
 		name: "default",
-		redirect: "/login",
+		redirect: "/layout",
 	},
 	{
 		path: "/login",
@@ -24,6 +24,15 @@ const Defaule: RouteRecordRaw[] = [
 			keepAlive: true,
 		},
 		component: () => import("~/views/home.vue"),
+	},
+	{
+		path: "/layout",
+		name: "Layout",
+		meta: {
+			title: "Layout",
+			keepAlive: true,
+		},
+		component: () => import("~/Layout/index.vue"),
 	},
 ];
 
