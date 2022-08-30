@@ -1,5 +1,4 @@
 import { createApp } from "vue";
-import "./style.css";
 // 引入scss公共样式
 import "./styles/index.scss";
 import App from "./App.vue";

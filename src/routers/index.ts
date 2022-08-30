@@ -1,12 +1,14 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import { type App } from "vue";
 import routeGuard from "./guard";
-async function initRouter(app: App) {
+import routes from "./components/index";
+
+function initRouter(app: App) {
 	const router = createRouter({
 		history: createWebHashHistory(),
-		routes: [],
+		routes,
 	});
-	await routeGuard(router);
+	routeGuard(router);
 	app.use(router);
 }
 

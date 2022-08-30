@@ -1,7 +1,4 @@
 // 样式组件出口
-@import url(./naive.scss);
-@import url(./style.scss);
-:root{
-  margin: 0;
-  padding: 0;
-}
+@import "./naive.scss";
+@import "./style.scss";
+@import "./echarts.scss";

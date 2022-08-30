@@ -11,6 +11,9 @@ declare module '@vue/runtime-core' {
     NConfigProvider: typeof import('naive-ui')['NConfigProvider']
     NDatePicker: typeof import("naive-ui")["NDatePicker"]
     NInput: typeof import("naive-ui")["NInput"]
+    NMessageProvider: typeof import('naive-ui')['NMessageProvider']
     NSpace: typeof import('naive-ui')['NSpace']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }

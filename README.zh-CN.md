@@ -1,32 +1,32 @@
 # vue-admin-template
 
-English | [简体中文](./README.zh-CN.md)
+ 简体中文 | [English](./README.md)
 
-## Getting started
+## 开始
 ```sh
-# clone 
+# 代码克隆 
 $ git clone https://github.com/990718xyh/vue-admin-template.git
-# install
+# 依赖下载
 $ pnpm
-# develop
+# 开发环境启动
 $ pnpm dev
 ```
 
-## Build
+## 发布
 ```sh
-# build for test environment
+# 测试环境打包
 $ pnpm build:test
-# build for prod environment
+# 线上环境打包
 $ pnpm build:prod
 ```
 
 ## Advanced
 ```sh
-# preivew
+# 预览
 $ pnpm preivew
-# checked code
+# eslint 代码校验
 $ pnpm lint
-# format code
+# 格式化代码
 $ pnpm prettier
 ```
 
