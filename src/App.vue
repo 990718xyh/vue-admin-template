@@ -5,12 +5,7 @@ import { zhCN, dateZhCN, darkTheme } from "naive-ui";
 <template>
 	<n-config-provider :theme="darkTheme" :locale="zhCN" :date-locale="dateZhCN">
 		<n-message-provider>
-			<router-view v-slot="{ Component, route }">
-				<keep-alive>
-					<component :is="Component" :key="route.fullPath" v-if="route.meta.keepAlive" />
-				</keep-alive>
-				<component :is="Component" :key="route.fullPath" v-if="!route.meta.keepAlive" />
-			</router-view>
+			<router-view></router-view>
 		</n-message-provider>
 	</n-config-provider>
 </template>

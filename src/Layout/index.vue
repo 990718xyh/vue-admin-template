@@ -14,12 +14,7 @@ import Menu from "./components/menu.vue";
 				</n-layout-header>
 				<n-layout-content content-style="padding: 24px;" class="layout-content">
 					<!-- Layout路由出口 -->
-					<router-view v-slot="{ Component, route }">
-						<keep-alive>
-							<component :is="Component" :key="route.fullPath" v-if="route.meta.keepAlive" />
-						</keep-alive>
-						<component :is="Component" :key="route.fullPath" v-if="!route.meta.keepAlive" />
-					</router-view>
+					<router-view></router-view>
 				</n-layout-content>
 			</n-layout>
 		</n-layout>
