@@ -16,7 +16,7 @@ const Default: RouteRecordRaw[] = [
 			title: "登录",
 			keepAlive: false,
 		},
-		component: () => import("~/views/login.vue"),
+		component: () => import("~/views/login/index.vue"),
 	},
 	{
 		path: "/home",
